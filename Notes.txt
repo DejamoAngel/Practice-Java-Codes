@@ -1,0 +1,36 @@
+User Input in Java
+You can use the Scanner class from the java.util package.
+First, import the Scanner class at the beginning of your Java program:
+	import java.util.Scanner;
+
+Next, create an instance of the Scanner class and assign it to a variable. You can name this variable anything you like. Here's an example:
+	Scanner scanner = new Scanner(System.in);
+
+Now that you have a Scanner object, you can use it to read user input. 
+For example, if you want to read an:
+Integer entered by the user, you can use the following code: 
+	System.out.println("Please enter an integer: ");
+	int userInput = scanner.nextInt();
+String entered by the user, you can use the following code: 
+	System.out.println("Please enter an string: ");
+	String userInput = scanner.nextLine();
+Float entered by the user, you can use the following code: 
+	System.out.println("Please enter an float: ");
+	float userInput = scanner.nextFloat();
+Double entered by the user, you can use the following code: 
+	System.out.println("Please enter an double: ");
+	double userInput = scanner.nextDouble();
+In this code, the System.out.println() method is used to print a message to the console, prompting the user to enter a string. 
+Then, the nextLine() method of the Scanner object is used to read the string entered by the user.
+
+Remember to close the Scanner object once you have finished using it to prevent resource leaks. Here's an example: 
+scanner.close();
+	- The scanner.close() method is used to close the Scanner object after it has been used. 
+	  Closing a Scanner object will free up resources and ensure that the program doesn't accidentally consume additional system resources 
+          while the scanner remains open. It's important to close the Scanner object when you're done using it, especially when dealing with 
+	  external resources like files or keyboard input. Failing to close the Scanner object can result in a memory leak, which is when the program 
+	  consumes more memory than it needs, causing performance issues.
+
+
+
+

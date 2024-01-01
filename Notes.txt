@@ -31,6 +31,93 @@ scanner.close();
 	  external resources like files or keyboard input. Failing to close the Scanner object can result in a memory leak, which is when the program 
 	  consumes more memory than it needs, causing performance issues.
 
+import java.util.Scanner;
+
+public class ArithmeticOperationsSimple {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.printf("Enter The First Number: ");
+        int num1 = scanner.nextInt();
+
+        System.out.printf("Enter The Second Number: ");
+        int num2 = scanner.nextInt();
+
+        int sum = num1 + num2;
+        int subtract = num1 - num2;
+        int multiply = num1 * num2;
+        double division = num1 / num2;
+
+        System.out.println("Output:");
+        System.out.println("Sum: " + sum );
+        System.out.println("Subtract: " + subtract );
+        System.out.println("Multiplication: " + multiply );
+        System.out.println("Division: " + division );
+
+        scanner.close();
+
+    }
+}
+
+
+import java.util.Scanner;
+
+public class ArithmeticOperations {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the first number:");
+        int num1 = scanner.nextInt();
+
+        System.out.println("Enter the second number:");
+        int num2 = scanner.nextInt();
+
+        int sum = addNumbers(num1, num2);
+        int difference = subtractNumbers(num1, num2);
+        int product = multiplyNumbers(num1, num2);
+        double quotient = divideNumbers(num1, num2);
+
+        System.out.println("The sum of " + num1 + " and " + num2 + " is: " + sum);
+        System.out.println("The difference of " + num1 + " and " + num2 + " is: " + difference);
+        System.out.println("The product of " + num1 + " and " + num2 + " is: " + product);
+        System.out.println("The quotient of " + num1 + " and " + num2 + " is: " + quotient);
+    }
+
+    public static int addNumbers(int num1, int num2) {
+        return num1 + num2;
+    }
+
+    public static int subtractNumbers(int num1, int num2) {
+        return num1 - num2;
+    }
+
+    public static int multiplyNumbers(int num1, int num2) {
+        return num1 * num2;
+    }
+
+    public static double divideNumbers(int num1, int num2) {
+        if (num2 == 0) {
+            System.out.println("Error: Division by zero is not allowed!");
+            return 0;
+        } else {
+            return (double) num1 / num2;
+        }
+    }
+}
+
+
+
+In this code, we have created a class called ArithmeticOperations and a main method inside it. 
+We use the Scanner class to read the input from the user. 
+The addNumbers, subtractNumbers, multiplyNumbers, and divideNumbers methods perform the respective arithmetic operations.
+
+The main method calls these methods and prints the results to the console.
+
+Note that in the divideNumbers method, we have added a check to prevent division by zero, which would cause an error.
+
 
 
 

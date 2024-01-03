@@ -1,3 +1,4 @@
+1/1/24
 User Input in Java
 You can use the Scanner class from the java.util package.
 First, import the Scanner class at the beginning of your Java program:
@@ -119,5 +120,21 @@ The main method calls these methods and prints the results to the console.
 Note that in the divideNumbers method, we have added a check to prevent division by zero, which would cause an error.
 
 
+Methods in Java
+In Java, a method is a block of code that is called by its name. The code within the method is executed when the method is invoked from elsewhere in the program.
+
+Methods in Java can be used to perform specific tasks or to implement specific functionalities. They can take parameters and can return a value.
+
+There are three types of methods in Java:
+
+Instance Methods: These methods belong to an instance of a class and can access instance variables. They can be invoked on an object.
+
+Static Methods: These methods belong to a class and not to an instance. They can access static variables. They can be invoked directly on the class and not on an object.
+
+Constructor Methods: These methods are special instance methods that are used to initialize an object immediately after memory has been allocated for it. They have the same name as the class.
+
+Methods are used to increase code reusability, maintainability, and efficiency in Java. They also serve as a way to define abstractions, encapsulation, and to provide inheritance capabilities in the Java language.
 
 
+what does it mean by returning a value?
+In programming, returning a value is an action that a function takes to send back some result or data to the part of the program that called it.

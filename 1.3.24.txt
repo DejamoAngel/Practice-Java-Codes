@@ -110,3 +110,41 @@ Bytecode: The compiled bytecode is stored in a .class file.
 Execution: The Java Interpreter (part of the JVM) reads the bytecode from the .class file and executes it on the JVM.
 
 The role of an Interpreter/Compiler in Java can be either traditional compiler, which compiles the code all at once, or an interpreter, which interprets the code line by line or in a more controlled way. Both roles have their advantages and disadvantages. However, Java primarily utilizes a compiler-based approach, resulting in a performance improvement.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

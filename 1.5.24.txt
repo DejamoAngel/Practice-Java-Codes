@@ -1,0 +1,252 @@
+Java Variables
+
+String 
+- stores text, such as "Hello". String values are surrounded by double quotes
+- A string in Java is a sequence of characters that is enclosed in double quotes. 
+- Strings in Java are immutable, which means they cannot be changed once they are created. 
+- When you modify a string in Java, it does not actually change the original string. Instead, it creates a new string.
+
+Here is an example of how to declare a string in Java:
+public class Main {
+  public static void main(String[] args) {
+    
+    String greeting = "Hello World!";
+    System.out.println(greeting);
+  }
+}
+Output: Hello World!
+In this example, "Hello, World!" is the string, and greeting is a reference variable that refers to the string.
+
+
+char 
+- stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+- In Java, char is a data type that can store a single character, such as a letter, digit, symbol, or space.
+- The char data type in Java is 16-bit and represents a Unicode character. 
+- Unicode is a superset of ASCII and can represent any character from any language, including characters with accents or special symbols.
+
+Here is an example of using char in Java:
+public class Main {
+    public static void main(String[] args) {
+        char letter = 'A';
+        char digit = '1';
+        char symbol = '$';
+        char space = ' ';
+
+        System.out.println("Letter: " + letter);
+        System.out.println("Digit: " + digit);
+        System.out.println("Symbol: " + symbol);
+        System.out.println("Space: " + space);
+    }
+}
+In this program, we define four char variables: letter, digit, symbol, and space. 
+Each variable stores a different type of character. We then print the value of each variable using System.out.println().
+
+The output of this program will be: 
+Letter: A
+Digit: 1
+Symbol: $
+Space:  
+
+
+boolean 
+- stores values with two states: true or false
+- In Java, boolean is a data type that can store one of two values: true or false. It is often used to represent a simple condition or status.
+
+Here is an example of using boolean in Java:
+public class Main {
+    public static void main(String[] args) {
+        boolean isEven = false;
+        boolean isDivisibleBy5 = true;
+
+        System.out.println("Is the number even? " + isEven);
+        System.out.println("Is the number divisible by 5? " + isDivisibleBy5);
+    }
+}
+In this program, we define two boolean variables: isEven and isDivisibleBy5. Each variable represents a condition that can be either true or false. We then print the value of each variable using System.out.println().
+
+The output of this program will be:
+Is the number even? false
+Is the number divisible by 5? true
+You can also use boolean variables in control structures, such as conditional statements (if-else) and loops (while and for).
+
+
+Integers
+byte
+- In Java, byte is a primitive data type that can store whole numbers from -128 to 127. 
+- It is the smallest numeric data type in Java and uses 8 bits of memory.
+
+Here is an example of using byte in Java:
+public class Main {
+    public static void main(String[] args) {
+        byte smallNumber = 127;
+        byte largeNumber = -128;
+
+        System.out.println("Smallest number: " + smallNumber);
+        System.out.println("Largest number: " + largeNumber);
+    }
+}
+In this program, we define two byte variables: smallNumber and largeNumber. 
+Each variable represents a whole number within the range of the byte data type. We then print the value of each variable using System.out.println().
+
+The output of this program will be:
+Smallest number: 127
+Largest number: -128
+You can also use byte variables in arithmetic operations, such as addition, subtraction, multiplication, and division. 
+Additionally, you can use them in control structures, such as conditional statements (if-else) and loops (while and for).
+
+
+short
+- In Java, short is a primitive data type that can store whole numbers from -32,768 to 32,767. 
+- It is larger than byte and smaller than int. It uses 16 bits of memory.
+
+Here is an example of using short in Java:
+public class Main {
+    public static void main(String[] args) {
+        short smallNumber = 32767;
+        short largeNumber = -32768;
+
+        System.out.println("Smallest number: " + smallNumber);
+        System.out.println("Largest number: " + largeNumber);
+    }
+}
+In this program, we define two short variables: smallNumber and largeNumber. 
+Each variable represents a whole number within the range of the short data type. We then print the value of each variable using System.out.println().
+
+The output of this program will be:
+Smallest number: 32767
+Largest number: -32768
+You can also use short variables in arithmetic operations, such as addition, subtraction, multiplication, and division. 
+Additionally, you can use them in control structures, such as conditional statements (if-else) and loops (while and for).
+
+
+int 
+- stores integers (whole numbers), without decimals, such as 123 or -123
+- An int in Java is a primitive data type that represents an integer value. This means it can store whole numbers like 0, 1, 2, and so on.
+
+Here is an example of how to declare an int in Java:
+public class Main {
+  public static void main(String[] args) {
+    
+    int age = 25;
+    System.out.println(age);
+  }
+}
+Output: 25
+In this example, number is an int variable, and 42 is the integer value it stores.
+
+long
+- In Java, long is a primitive data type that can store whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. 
+- It is larger than int and smaller than float. It uses 64 bits of memory.
+
+Here is an example of using long in Java:
+public class Main {
+    public static void main(String[] args) {
+        long smallNumber = 9223372036854775807L;
+        long largeNumber = -9223372036854775808L;
+
+        System.out.println("Smallest number: " + smallNumber);
+        System.out.println("Largest number: " + largeNumber);
+    }
+}
+In this program, we define two long variables: smallNumber and largeNumber. Each variable represents a whole number within the range of the long data type. We then print the value of each variable using System.out.println().
+
+The output of this program will be:
+Smallest number: 9223372036854775807
+Largest number: -9223372036854775808
+You can also use long variables in arithmetic operations, such as addition, subtraction, multiplication, and division. 
+Additionally, you can use them in control structures, such as conditional statements (if-else) and loops (while and for).
+
+
+Floating Point
+float 
+- stores floating point numbers, with decimals, such as 19.99 or -19.99
+- A float in Java is a primitive data type that represents a floating-point number. This means it can store decimal numbers like 0.0, 1.1, 2.2, and so on.
+
+Here is an example of how to declare a float in Java:
+public class Main {
+  public static void main(String[] args) {
+    
+    float number = 42.0f;
+    System.out.println(number);
+  }
+}
+Output: 42.0
+In this example, number is a float variable, and 42.0 is the floating-point value it stores. The f at the end of the number indicates that it is a float literal.
+
+In this code why the floating point only has one zero but not two zeros?
+public class Main {
+  public static void main(String[] args) {
+    
+    float number = 42.0f;
+    System.out.println(number);
+  }
+}
+
+UNDEFINED
+This is because the println method uses the default String.valueOf(float) conversion when printing the float. This conversion follows the IEEE 754 standard for floating-point arithmetic, and does not include unnecessary trailing zeros.
+
+Here's the exact implementation of the String.valueOf(float) method:
+public static String valueOf(float f) {
+    return Float.toString(f);
+}
+
+And here's the implementation of the Float.toString(float) method:
+public static String toString(float f) {
+    return FloatingDecimal.toJavaFormatString(f);
+}
+As you can see, the FloatingDecimal.toJavaFormatString(float) method is used, which does not include unnecessary trailing zeros. This is why when you print a float with two zeroes after the decimal point, the output will still be a single zero after the decimal point.
+
+If you want to print the exact number of decimal places as specified in the float literal, you can use System.out.printf:
+public class Main {
+ public static void main(String[] args) {
+    
+    float number = 42.00f;
+    System.out.printf("%.2f", number);
+ }
+}
+In this case, the output will be "42.00" with two zeroes after the decimal point.
+
+Why is doesn't work if i use the println() method?
+It doesn't work if you use the println() method because the println() method doesn't provide any formatting options for the float. The printf() method, on the other hand, does provide formatting options, and that's why it works.
+
+How about the print() method? does it work or not?
+The print() method doesn't work either, for the same reason. The print() method doesn't provide any formatting options for the float either.
+
+In summary, if you want to print a float with a specific number of decimal places, you need to use the printf() method. The println() and print() methods don't provide this option.
+
+
+double
+- A double in Java is a primitive data type that represents a double-precision floating-point number. This means it can store decimal numbers with more precision than a float.
+
+Here is an example of how to declare a double in Java:
+public class Main {
+  public static void main(String[] args) {
+    
+    double number = 42.0;
+    System.out.println(number);
+  }
+}
+Output: 42.0
+In this example, number is a double variable, and 42.0 is the double-precision floating-point value it stores.
+
+In Java, double is a primitive data type that can store whole numbers and fractional numbers (also known as decimal numbers or floating-point numbers). It is larger than long and smaller than float. It uses 64 bits of memory.
+
+Here is an example of using double in Java:
+public class Main {
+    public static void main(String[] args) {
+        double smallNumber = 9223372036854775807.9223372036854775807D;
+        double largeNumber = -9223372036854775808.9223372036854775808D;
+
+        System.out.println("Smallest number: " + smallNumber);
+        System.out.println("Largest number: " + largeNumber);
+    }
+}
+In this program, we define two double variables: smallNumber and largeNumber. Each variable represents a decimal number within the range of the double data type. We then print the value of each variable using System.out.println().
+
+The output of this program will be:
+Smallest number: 9.223372036854776E18
+Largest number: -9.223372036854776E18
+You can also use double variables in arithmetic operations, such as addition, subtraction, multiplication, and division. 
+Additionally, you can use them in control structures, such as conditional statements (if-else) and loops (while and for).
+
+
